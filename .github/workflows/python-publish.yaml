@@ -3,8 +3,12 @@ name: Upload Python Package
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - './app/**.py'
   pull_request:
     branches: [ "main" ]
+    paths:
+      - './app/**.py'
 
 jobs:
 
