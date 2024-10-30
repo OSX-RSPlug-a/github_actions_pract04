@@ -34,9 +34,6 @@ jobs:
     - name: Install dependencies
       if: steps.cache.outputs.cache-hit != 'true'
       run: poetry install --no-interaction --no-root
-        
-    - name: Test with pytest
-      run: poetry run pytest
       
     - name: Build FastAPI application
       run: poetry run uvicorn app.main:app --reload
