@@ -1,3 +1,5 @@
 typing
 fastapi
 fastapi[standard]
+uvicorn[standard]
+uvicorn
